@@ -332,8 +332,32 @@ Copy code
 This code prints the value of i followed by a * for each iteration of the inner loop, resulting in a pattern that looks like a descending staircase with each step decorated with a *. If you want to print a diamond pattern, you'll need to modify the code to handle spaces and proper alignment of *.
 
 
-# In[ ]:
+# In[10]:
 
 
+n=int(input("enter the number of rows"))
+for i in range(n,0,-1):
+    for j in range(1,i+1):
+        print("*",end="")
+    print()
 
+
+# In[11]:
+
+
+n=int(input("enter the number of rows"))
+for i in range(n):
+    for j in range(i+1):
+        print("*",end="")
+    print()
+
+
+# In[13]:
+
+
+n=int(input("enter the number of rows"))
+for i in range(n,0,-2):
+    for j in range(1,i+1):
+        print("*",end="")
+    print()
 
